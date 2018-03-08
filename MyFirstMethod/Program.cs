@@ -6,15 +6,17 @@ using System.Threading.Tasks;
 
 namespace MyAula04 {
     class MyClass {
-        static void CountTo10() {
-            for (int i = 1; i <= 10; i++)
+        static void CountToN(int n) {
+            for (int i = 1; i <= n; i++)
                 Console.WriteLine(i);
         }
 
         static void Main(string[] args) {
-            CountTo10();
-            CountTo10();
-            CountTo10();
+            string aux = Console.ReadLine();
+            int nCount = Convert.ToInt32(aux);
+            CountToN(nCount);
+            CountToN(nCount);
+            Console.ReadKey();
         }
     }
 }
