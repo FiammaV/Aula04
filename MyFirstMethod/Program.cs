@@ -13,9 +13,11 @@ namespace MyAula04 {
 
         static void Main(string[] args) {
             string aux = Console.ReadLine();
+            string aox = Console.ReadLine();
             int nCount = Convert.ToInt32(aux);
+            int mCount = Convert.ToInt32(aox);
             CountToN(nCount);
-            CountToN(nCount);
+            CountToN(mCount);
             Console.ReadKey();
         }
     }
